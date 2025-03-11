@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: desafio-picpay
+  datasource:
+    url: jdbc:postgresql://ep-falling-wind-a47g1q5q-pooler.us-east-1.aws.neon.tech/clinica
+    username: clinica_owner
+    password: UbvLlxf6B0qj
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
