@@ -1,6 +1,6 @@
-package com.desafio_picpay.repository;
+package com.wallet_transfer_api.repository;
 
-import com.desafio_picpay.model.Usuario;
+import com.wallet_transfer_api.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {

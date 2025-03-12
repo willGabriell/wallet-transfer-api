@@ -1,4 +1,4 @@
-package com.desafio_picpay;
+package com.wallet_transfer_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

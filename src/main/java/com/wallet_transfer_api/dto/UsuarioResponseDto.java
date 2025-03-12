@@ -1,6 +1,6 @@
-package com.desafio_picpay.dto;
+package com.wallet_transfer_api.dto;
 
-import com.desafio_picpay.model.Usuario;
+import com.wallet_transfer_api.model.Usuario;
 import lombok.Getter;
 import lombok.Setter;
 

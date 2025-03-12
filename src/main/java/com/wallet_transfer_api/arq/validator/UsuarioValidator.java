@@ -1,8 +1,8 @@
-package com.desafio_picpay.arq.validator;
+package com.wallet_transfer_api.arq.validator;
 
-import com.desafio_picpay.arq.util.ValidatorUtil;
-import com.desafio_picpay.model.Usuario;
-import com.desafio_picpay.repository.UsuarioRepository;
+import com.wallet_transfer_api.arq.util.ValidatorUtil;
+import com.wallet_transfer_api.model.Usuario;
+import com.wallet_transfer_api.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

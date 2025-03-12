@@ -1,4 +1,4 @@
-package com.desafio_picpay.arq.util;
+package com.wallet_transfer_api.arq.util;
 
 import java.util.Collection;
 import java.util.Map;

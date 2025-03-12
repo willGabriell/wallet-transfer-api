@@ -1,6 +1,6 @@
-package com.desafio_picpay.controller;
+package com.wallet_transfer_api.controller;
 
-import com.desafio_picpay.dto.error.ErrorResponseDto;
+import com.wallet_transfer_api.dto.error.ErrorResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

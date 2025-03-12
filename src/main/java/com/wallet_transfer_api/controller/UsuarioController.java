@@ -1,9 +1,9 @@
-package com.desafio_picpay.controller;
+package com.wallet_transfer_api.controller;
 
-import com.desafio_picpay.dto.UsuarioRequestDto;
-import com.desafio_picpay.dto.UsuarioResponseDto;
-import com.desafio_picpay.model.Usuario;
-import com.desafio_picpay.service.UsuarioService;
+import com.wallet_transfer_api.dto.UsuarioRequestDto;
+import com.wallet_transfer_api.dto.UsuarioResponseDto;
+import com.wallet_transfer_api.model.Usuario;
+import com.wallet_transfer_api.service.UsuarioService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

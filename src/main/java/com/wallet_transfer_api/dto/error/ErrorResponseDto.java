@@ -1,4 +1,4 @@
-package com.desafio_picpay.dto.error;
+package com.wallet_transfer_api.dto.error;
 
 import lombok.Getter;
 import lombok.Setter;

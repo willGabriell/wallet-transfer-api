@@ -1,4 +1,4 @@
-package com.desafio_picpay;
+package com.wallet_transfer_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
