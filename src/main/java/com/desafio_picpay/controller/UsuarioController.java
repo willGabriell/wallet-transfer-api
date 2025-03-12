@@ -1,8 +1,12 @@
 package com.desafio_picpay.controller;
 
+import com.desafio_picpay.dto.UsuarioRequestDto;
+import com.desafio_picpay.dto.UsuarioResponseDto;
 import com.desafio_picpay.model.Usuario;
 import com.desafio_picpay.service.UsuarioService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,15 +21,12 @@ public class UsuarioController {
     private final UsuarioService usuarioService;
 
     @PostMapping("/cadastrar")
-    public ResponseEntity<Usuario> cadastrarUsuario(@RequestBody Usuario usuario) {
+    public ResponseEntity<UsuarioResponseDto> cadastrarUsuario(@Valid @RequestBody UsuarioRequestDto usuarioDto) {
 
-        if(usuario == null) {
-            return ResponseEntity.badRequest().build();
-        }
+        Usuario usuario = usuarioService.cadastrar(usuarioDto);
+        UsuarioResponseDto responseDto = new UsuarioResponseDto(usuario);
 
-        usuarioService.cadastrar(usuario);
-
-        return ResponseEntity.ok(usuario);
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
     }
 
 }

@@ -4,7 +4,9 @@ import com.desafio_picpay.arq.util.ValidatorUtil;
 import com.desafio_picpay.model.Usuario;
 import com.desafio_picpay.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
 @RequiredArgsConstructor
 public class UsuarioValidator {
 
