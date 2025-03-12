@@ -1,10 +1,10 @@
 spring:
   application:
-    name: desafio-picpay
+    name: wallet-transfer-api
   datasource:
-    url: jdbc:postgresql://ep-falling-wind-a47g1q5q-pooler.us-east-1.aws.neon.tech/clinica
-    username: clinica_owner
-    password: UbvLlxf6B0qj
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
