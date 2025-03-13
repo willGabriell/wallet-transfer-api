@@ -1,4 +1,4 @@
-package com.wallet_transfer_api.arq.util;
+package com.wallet_transfer_api.arq.validator;
 
 import java.util.Collection;
 import java.util.Map;

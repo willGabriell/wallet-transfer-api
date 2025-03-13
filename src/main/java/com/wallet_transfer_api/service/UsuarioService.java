@@ -1,6 +1,6 @@
 package com.wallet_transfer_api.service;
 
-import com.wallet_transfer_api.arq.util.ValidatorUtil;
+import com.wallet_transfer_api.arq.validator.ValidatorUtil;
 import com.wallet_transfer_api.arq.validator.UsuarioValidator;
 import com.wallet_transfer_api.dto.UsuarioRequestDto;
 import com.wallet_transfer_api.model.Usuario;
