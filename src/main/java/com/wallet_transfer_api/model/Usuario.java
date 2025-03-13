@@ -26,12 +26,4 @@ public class Usuario {
 
     @Column(nullable = false)
     private String senha;
-
-    private Boolean lojista;
-
-    // boolean ou Boolean
-    // boolean = true ou false
-    // Boolean = true, false ou null
-
-    // boilerplate code - runtime
 }

@@ -22,7 +22,4 @@ public class UsuarioRequestDto {
     @NotBlank
     private String senha;
 
-    @NotNull
-    private Boolean lojista;
-
 }
