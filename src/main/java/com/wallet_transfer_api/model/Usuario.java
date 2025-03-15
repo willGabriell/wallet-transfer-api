@@ -1,5 +1,6 @@
 package com.wallet_transfer_api.model;
 
+import com.wallet_transfer_api.model.enums.TipoUsuario;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,10 +33,14 @@ public class Usuario {
     private String email;
 
     @Column(nullable = false)
-    private BigDecimal saldo = BigDecimal.ZERO;
+    private BigDecimal saldo;
 
     @Column(nullable = false)
     private String senha;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.ORDINAL)
+    private TipoUsuario tipo;
 
     @CreatedDate
     @Column(nullable = false)

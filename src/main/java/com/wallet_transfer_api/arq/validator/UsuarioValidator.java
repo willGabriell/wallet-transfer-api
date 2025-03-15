@@ -45,6 +45,10 @@ public class UsuarioValidator {
             throw new IllegalArgumentException("Senha não pode ser nulo ou vazio");
         }
 
+        if(ValidatorUtil.isEmpty(usuario.getTipo())) {
+            throw new IllegalArgumentException("TipoUsuario não pode ser nulo ou vazio");
+        }
+
         return true;
     }
 }

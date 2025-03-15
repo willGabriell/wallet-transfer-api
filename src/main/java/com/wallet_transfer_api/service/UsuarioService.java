@@ -25,6 +25,8 @@ public class UsuarioService {
         usuario.setCpf(usuarioDto.getCpf());
         usuario.setEmail(usuarioDto.getEmail());
         usuario.setSenha(usuarioDto.getSenha());
+        usuario.setTipo(usuarioDto.getTipo());
+        usuario.setSaldo(usuarioDto.getSaldo());
 
         usuarioValidator.validaCamposObrigatorios(usuario);
         usuarioValidator.validaDuplicidade(usuario);
@@ -46,6 +48,7 @@ public class UsuarioService {
         usuario.setCpf(usuarioDto.getCpf());
         usuario.setEmail(usuarioDto.getEmail());
         usuario.setSenha(usuarioDto.getSenha());
+        usuario.setTipo(usuarioDto.getTipo());
 
         usuarioValidator.validaCamposObrigatorios(usuario);
 
