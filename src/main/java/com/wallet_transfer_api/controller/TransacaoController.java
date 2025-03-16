@@ -1,7 +1,6 @@
 package com.wallet_transfer_api.controller;
 
 import com.wallet_transfer_api.arq.validator.TransacaoValidator;
-import com.wallet_transfer_api.arq.validator.ValidatorUtil;
 import com.wallet_transfer_api.dto.TransacaoRequestDto;
 import com.wallet_transfer_api.dto.TransacaoResponseDto;
 import com.wallet_transfer_api.model.Transacao;

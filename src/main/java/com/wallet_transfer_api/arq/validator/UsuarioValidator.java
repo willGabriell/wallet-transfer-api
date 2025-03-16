@@ -1,6 +1,5 @@
 package com.wallet_transfer_api.arq.validator;
 
-import com.wallet_transfer_api.arq.validator.ValidatorUtil;
 import com.wallet_transfer_api.model.Usuario;
 import com.wallet_transfer_api.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;

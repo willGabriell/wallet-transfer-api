@@ -1,7 +1,5 @@
 package com.wallet_transfer_api.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wallet_transfer_api.dto.TransacaoRequestDto;
 import com.wallet_transfer_api.model.Transacao;
 import com.wallet_transfer_api.model.Usuario;
@@ -62,7 +60,6 @@ public class TransacaoService {
         RestTemplate restTemplate = new RestTemplate();
 
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
-        ObjectMapper mapper = new ObjectMapper();
         HttpStatusCode status = response.getStatusCode();
         return status == HttpStatus.OK;
     }
